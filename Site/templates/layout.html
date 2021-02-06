@@ -1,0 +1,24 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <title>Team Mask</title> <!-- Website name -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}" <!-- Ref stylesheet -->
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="logo">Team Mask</h1> <!-- h1.logo style -->
+                <strong><nav>
+                    <ul class="menu"> <!-- ul.menu style -->
+                        <li><a href="{{ url_for('home')}}">Home</a></li> <!-- li style -->
+                        <li><a href="{{ url_for('about')}}">About</a></li>
+                    </u1>
+                </nav><strong>
+            </div>
+        </header>
+        <div class="container">
+            {%block content%}
+            {%endblock%}
+        </div>
+    </body>
+</html>
