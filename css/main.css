@@ -10,7 +10,7 @@ body {
    */
   
   header {
-    background-color: #DFB887;
+    background-color: #9CCAF4;
     height: 10%;
     width: 100%;
     opacity: .9;
@@ -41,7 +41,7 @@ body {
   
   div.home {
     padding: 10px 0 30px 0;
-    background-color: #E6E6FA;
+    background-color: #fff;
     -webkit-border-radius: 6px;
        -moz-border-radius: 6px;
             border-radius: 6px;
