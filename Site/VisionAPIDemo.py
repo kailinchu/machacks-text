@@ -1,4 +1,5 @@
 import os, io
+import main
 from google.cloud import vision_v1
 ## import pandas as pd
 
@@ -8,7 +9,8 @@ from google.cloud import vision_v1
 def text():
     client = vision_v1.ImageAnnotatorClient.from_service_account_json(r"VisionAPIDemo/ServiceAccountToken.json")
 
-    image_file = 'IMG_8230.JPG'
+    #image_file = 'IMG_8230.JPG'
+    image_file = main.file_name()
     FOLDER_PATH = r'VisionAPIDemo/Images/Text'
     FILE_PATH = os.path.join(FOLDER_PATH, image_file)
 
