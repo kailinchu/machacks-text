@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #74A7EE;
+    color: #1d69d3;
   }
   
   /*
@@ -10,7 +10,7 @@ body {
    */
   
   header {
-    background-color: #9CCAF4;
+    background-color: #1f7bd1;
     height: 10%;
     width: 100%;
     opacity: .9;
