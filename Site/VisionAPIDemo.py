@@ -11,6 +11,7 @@ def text():
 
     #image_file = 'IMG_8230.JPG'
     image_file = main.file_name()
+    image_file = "safety.jpg"
     FOLDER_PATH = r'VisionAPIDemo/Images/Text'
     FILE_PATH = os.path.join(FOLDER_PATH, image_file)
 

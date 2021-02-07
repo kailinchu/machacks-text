@@ -25,7 +25,8 @@ def upload_file():
         #uploads to images folder
         uploaded_file.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(uploaded_file.filename)))
     text = VisionAPIDemo.text()
-    return render_template("home.html",text=text)
+    displaytext = "Your file says the following:"
+    return render_template("home.html",text=text, displaytext = displaytext)
     ##return redirect(url_for('home'))
 
 def file_name():
