@@ -43,35 +43,45 @@ body {
   
   div.home {
     margin: 10%;
-    background-color: #fff;
+    /*background-color: rgb(205, 208, 233);
     -webkit-border-radius: 6px;
        -moz-border-radius: 6px;
-            border-radius: 6px;
+            border-radius: 6px;*/
     text-align: center;
     color: #3451a9
   }
   
   div.about {
-    padding: 10px 0 30px 0;
-    background-color: #E6E6FA;
+    padding: 1%;
+    font-weight: 350;
+    color: #444;
+    /*background-color: #E6E6FA;
     -webkit-border-radius: 6px;
        -moz-border-radius: 6px;
-            border-radius: 6px;
+            border-radius: 6px;*/
   }
 
   h2 {
     font-size: 3em;
     text-align: center;
     letter-spacing: 0px;
+    margin: 5px
   }
   
   h3 {
     font-size: 1.7em;
-    font-weight: 100;
+    font-weight: 250;
     margin-top: 30px;
+    margin-bottom: 0px;
     text-align: center;
-    letter-spacing: -1px;
+    letter-spacing: -.5px;
     color: #999;
+  }
+
+  h4 {
+    font-size: 1.2em;
+    text-align: left;
+    letter-spacing: 0px;
   }
   
   .menu {
@@ -95,5 +105,30 @@ body {
   }
   
   .converted-text {
-    color: #444
+    color: #444;
+    font-size: 1em;
+    padding: 3px 10px;
+    display: inline-block;
+    background-color: rgb(205, 208, 233);
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+  }
+
+  /* no padding when no text */
+  .converted-text:empty {
+    padding: 0;
+  }
+  .formbutton {
+    background-color: rgb(205, 208, 233);
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
   }
