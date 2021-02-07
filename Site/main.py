@@ -24,8 +24,9 @@ def upload_file():
     if uploaded_file.filename != '':
         #uploads to images folder
         uploaded_file.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(uploaded_file.filename)))
-    return VisionAPIDemo.text()
-    #return redirect(url_for('home'))
+    text = VisionAPIDemo.text()
+    return render_template("home.html",text=text)
+    ##return redirect(url_for('home'))
 
 def file_name():
     file_name = request.files['file']
